@@ -10,7 +10,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:success] = "Your user account is registered to the Cyber crisis simulation platform"
+      log_in @user
+      flash[:success] = "Welcome to the Simulation Platform"
       redirect_to @user
     else
       render 'new'
