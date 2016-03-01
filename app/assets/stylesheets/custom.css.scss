@@ -179,3 +179,14 @@ footer {
 }
 
 
+/* EY Styles*/
+.btn {
+  background-color: #FFD200;
+  color: black;
+  border: none;
+  &:hover{
+    background-color: #808080;
+    color: #FFD200;
+  }
+}
+
